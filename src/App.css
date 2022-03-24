@@ -123,3 +123,11 @@ width:min-content;
 
 }
 
+.content-five{
+  display: flex;
+}
+
+.content-five img{
+  width: 25%;
+}
+

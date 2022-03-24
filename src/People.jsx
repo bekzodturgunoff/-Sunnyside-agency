@@ -1,13 +1,13 @@
 import React from "react";
 
-const human = props=>{
-console.log(props )
-}
+const human = (props) => {
+  console.log(props);
+};
 
-export default function People(props){
-    return(
-        
-
-
-    )
+export default function People(props) {
+  return (
+    <div>
+      <p>People</p>
+    </div>
+  );
 }
