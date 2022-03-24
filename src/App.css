@@ -83,11 +83,14 @@ a{
 .content--two {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+  
 }
 
 
 
-.content-three {
+.content--three {
 display: flex;
 
 }
@@ -99,8 +102,21 @@ display: flex;
 .text--div {
   padding: 30px;
 }
-.text--img--div img{
+.text--img--div h3{
+position:relative;
+text-align: center;
+bottom: 13rem;
+font-family: var(--second-font);
+font-weight: 900;
+}
 
+.text--img--div p{
+margin: auto;
+  width: 50ch;
+  position: relative;
+  text-align: center;
+  bottom: 10rem;
+  
 }
 .text--img--div{
 width:min-content;

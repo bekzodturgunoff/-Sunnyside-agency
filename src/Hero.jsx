@@ -1,4 +1,5 @@
 import React from "react";
+import People from "People"
 
 export default function Hero() {
   return (
@@ -16,9 +17,9 @@ export default function Hero() {
             fast. Engage your clients through compelling visuals that do most of
             marketing for you.
           </p>
-          <bold>
+          <p>
             <a href="#">LEARN MORE</a>
-          </bold>
+          </p>
         </div>
 
         <div className="img--div">
@@ -38,16 +39,16 @@ export default function Hero() {
             photographers, videographers, and copywriters, we'll build and
             extend your brand in digital places.
           </p>
-          <bold>
+          <p>
             <a href="#">LEARN MORE</a>
-          </bold>
+          </p>
         </div>
       </div>
 
-      <div className="content-three">
+      <div className="content--three">
         <div className="text--img--div">
           <img src="../images/desktop/image-graphic-design.jpg" alt="" />
-          <h3>Graphic Design</h3>
+          <h3 className="heading-three">Graphic Design</h3>
           <p>
             Great design makes you memorable. we deliver artwork that
             underscores your brand message and captures potential clients'
@@ -62,6 +63,16 @@ export default function Hero() {
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
+        </div>
+      </div>
+
+      <div className="content--four">
+        <h1>CLIENT TESTIMONIALS</h1>
+        <div className="People">
+          <img src={props.img} />
+          <p>{props.description}</p>
+          <h4>{props.username}</h4>
+          <p>{props.role}</p>
         </div>
       </div>
     </div>
