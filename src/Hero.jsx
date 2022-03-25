@@ -20,7 +20,9 @@ export default function Hero() {
             marketing for you.
           </p>
           <p>
-            <a href="#">LEARN MORE</a>
+            <span>
+              <a href="#">LEARN MORE</a>
+            </span>
           </p>
         </div>
 
@@ -42,7 +44,9 @@ export default function Hero() {
             extend your brand in digital places.
           </p>
           <p>
-            <a href="#">LEARN MORE</a>
+            <span>
+              <a href="#">LEARN MORE</a>
+            </span>
           </p>
         </div>
       </div>
