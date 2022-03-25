@@ -52,7 +52,7 @@ export default function Hero() {
           <img src="../images/desktop/image-graphic-design.jpg" />
           <h3 className="graphic-design">Graphic Design</h3>
           <p className="graphic-p">
-            Great design makes you memorable. we deliver artwork that
+            Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients'
             attention.
           </p>
