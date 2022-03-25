@@ -2,7 +2,7 @@
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./desktop-preview.jpg)
 
 ## My process
 
