@@ -274,6 +274,7 @@ span {
   .content--one {
     display: flex;
     flex-direction: column-reverse;
+    align-items: none;
   }
 
   .content--two {
@@ -294,5 +295,32 @@ span {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  .text--img--div {
+    display: flex;
+    flex-direction: column;
+  }
+  .text--img--div img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 649px) {
+  .links {
+    display: none;
+  }
+  .hero--main h1 {
+    top: 6rem;
+  }
+  .arrow {
+    top: 10rem;
+  }
+
+  .text--img--div h3 {
+    bottom: 10rem;
+  }
+
+  .text--img--div p {
+    bottom: 9rem;
   }
 }
