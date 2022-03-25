@@ -1,5 +1,15 @@
 import React from "react";
 import People from "./People";
+import ArrowImg from "../images/icon-arrow-down.svg";
+import HeaderImg from "../images/desktop/image-header.jpg";
+import ContentOneImg from "../images/desktop/image-transform.jpg";
+import ContentTwoImg from "../images/desktop/image-stand-out.jpg";
+import ContentThreeOneImg from "../images/desktop/image-graphic-design.jpg";
+import ContentThreeTwoImg from "../images/desktop/image-photography.jpg";
+import FaceOne from "../images/image-emily.jpg";
+import FaceTwo from "../images/image-thomas.jpg";
+import FaceThree from "../images/image-jennie.jpg";
+
 // import People from "People";
 
 export default function Hero() {
@@ -7,8 +17,8 @@ export default function Hero() {
     <div className="main">
       <div className="hero--main">
         <h1>WE ARE CREATIVES</h1>
-        <img className="arrow" src="../images/icon-arrow-down.svg" />
-        <img className="header--img" src="../images/desktop/image-header.jpg" />
+        <img className="arrow" src={ArrowImg} />
+        <img className="header--img" src={HeaderImg} />
       </div>
 
       <div className="content--one">
@@ -27,13 +37,13 @@ export default function Hero() {
         </div>
 
         <div className="img--div">
-          <img src="../images/desktop/image-transform.jpg" />
+          <img src={ContentOneImg} />
         </div>
       </div>
 
       <div className="content--two">
         <div className="img--div">
-          <img src="../images/desktop/image-stand-out.jpg" />
+          <img src={ContentTwoImg} />
         </div>
 
         <div className="text--div">
@@ -53,7 +63,7 @@ export default function Hero() {
 
       <div className="content--three">
         <div className="text--img--div">
-          <img src="../images/desktop/image-graphic-design.jpg" />
+          <img src={ContentThreeOneImg} />
           <h3 className="graphic-design">Graphic Design</h3>
           <p className="graphic-p">
             Great design makes you memorable. We deliver artwork that
@@ -63,7 +73,7 @@ export default function Hero() {
         </div>
 
         <div className="text--img--div">
-          <img src="../images/desktop/image-photography.jpg" />
+          <img src={ContentThreeTwoImg} />
           <h3 className="photography">Photography</h3>
           <p className="photography-p">
             Increase your credibility by getting the most stunning, high-quality
@@ -77,7 +87,7 @@ export default function Hero() {
         <div className="people-div">
           <People
             className="people"
-            img="../images/image-emily.jpg"
+            img={FaceOne}
             description="We put trust in Sunnyside and 
           they delivered, making sure our needs were met 
           and deadlines were always hit."
@@ -87,7 +97,7 @@ export default function Hero() {
 
           <People
             className="people"
-            img="../images/image-thomas.jpg"
+            img={FaceTwo}
             description="Sunntside's enthusiasm coupled with their
         keen interest in our brand's success made it a satisfying
         and enjoyable experience."
@@ -97,7 +107,7 @@ export default function Hero() {
 
           <People
             className="people"
-            img="../images/image-jennie.jpg"
+            img={FaceThree}
             description="Incredible end result! Our sales increased 
         over 400% when we worked with Sunnyside. Highly recommended!"
             username="Jennie F."

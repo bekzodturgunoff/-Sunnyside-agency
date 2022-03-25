@@ -1,13 +1,22 @@
 import React from "react";
+import FooterImgOne from "../images/desktop/image-gallery-milkbottles.jpg";
+import FooterImgTwo from "../images/desktop/image-gallery-orange.jpg";
+import FooterImgThree from "../images/desktop/image-gallery-cone.jpg";
+import FooterImgFour from "../images/desktop/image-gallery-sugarcubes.jpg";
+
+import IconOne from "../images/icon-facebook.svg";
+import IconTwo from "../images/icon-instagram.svg";
+import IconThree from "../images/icon-twitter.svg";
+import IconFour from "../images/icon-pinterest.svg";
 
 export default function Footer() {
   return (
     <div>
       <div className="content-five">
-        <img src="../images/desktop/image-gallery-milkbottles.jpg" />
-        <img src="../images/desktop/image-gallery-orange.jpg" />
-        <img src="../images/desktop/image-gallery-cone.jpg" />
-        <img src="../images/desktop/image-gallery-sugarcubes.jpg" />
+        <img src={FooterImgOne} />
+        <img src={FooterImgTwo} />
+        <img src={FooterImgThree} />
+        <img src={FooterImgFour} />
       </div>
 
       <div className="footer">
@@ -21,16 +30,16 @@ export default function Footer() {
 
         <div className="footer-icons">
           <a href="#">
-            <img src="../images/icon-facebook.svg" />
+            <img src={IconOne} />
           </a>
           <a href="#">
-            <img src="../images/icon-instagram.svg" />
+            <img src={IconTwo} />
           </a>
           <a href="#">
-            <img src="../images/icon-twitter.svg" />
+            <img src={IconThree} />
           </a>
           <a href="#">
-            <img src="../images/icon-pinterest.svg" />
+            <img src={IconFour} />
           </a>
         </div>
       </div>
