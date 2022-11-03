@@ -6,7 +6,7 @@ import People from "./People";
 export default function Content() {
   return (
     <div className="content">
-      <div className="content--one">
+      <div className="content--one" id="about">
         <div className="content-one-text">
           <h2>Transform your brand</h2>
           <p>
@@ -46,7 +46,7 @@ export default function Content() {
         </div>
       </div>
 
-      <div className="content--two">
+      <div className="content--two" id="services">
         <div className="graphic-img">
           <h3>Graphic Design</h3>
           <p>

@@ -6,21 +6,23 @@ export default function Navbar() {
     <header>
       <nav className="navbar">
         <div className="logo">
-          <img src={images.logo} alt="" />
+          <a href="#home">
+            <img src={images.logo} alt="" />
+          </a>
         </div>
         <ul className="links">
           <li>
-            <a href="#" className="link">
+            <a href="#about" className="link">
               About
             </a>
           </li>
           <li>
-            <a href="#" className="link">
+            <a href="#services" className="link">
               Services
             </a>
           </li>
           <li>
-            <a href="#" className="link">
+            <a href="#projects" className="link">
               Projects
             </a>
           </li>
@@ -28,7 +30,7 @@ export default function Navbar() {
           <button className="nav--btn">Contact</button>
         </ul>
       </nav>
-      <div className="hero">
+      <div className="hero" id="home">
         <h1>WE ARE CREATIVES</h1>
         <img className="arrow" src={images.iconArrowDown} />
       </div>
