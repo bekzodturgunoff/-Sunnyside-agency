@@ -1,22 +1,13 @@
 import React from "react";
-import FooterImgOne from "../images/desktop/image-gallery-milkbottles.jpg";
-import FooterImgTwo from "../images/desktop/image-gallery-orange.jpg";
-import FooterImgThree from "../images/desktop/image-gallery-cone.jpg";
-import FooterImgFour from "../images/desktop/image-gallery-sugarcubes.jpg";
-
-import IconOne from "../images/icon-facebook.svg";
-import IconTwo from "../images/icon-instagram.svg";
-import IconThree from "../images/icon-twitter.svg";
-import IconFour from "../images/icon-pinterest.svg";
 
 export default function Footer() {
   return (
-    <div>
+    <footer>
       <div className="content-five">
-        <img src={FooterImgOne} />
+        {/* <img src={FooterImgOne} />
         <img src={FooterImgTwo} />
         <img src={FooterImgThree} />
-        <img src={FooterImgFour} />
+        <img src={FooterImgFour} /> */}
       </div>
 
       <div className="footer">
@@ -27,7 +18,7 @@ export default function Footer() {
           <a href="#">Services</a>
           <a href="#">Projects</a>
         </div>
-
+        {/* 
         <div className="footer-icons">
           <a href="#">
             <img src={IconOne} />
@@ -41,7 +32,7 @@ export default function Footer() {
           <a href="#">
             <img src={IconFour} />
           </a>
-        </div>
+        </div> */}
       </div>
 
       <div className="attribution">
@@ -52,6 +43,6 @@ export default function Footer() {
         . Coded by
         <a href="https://github.com/bekzodturgunoff">Bekzod Turgunov</a>.
       </div>
-    </div>
+    </footer>
   );
 }

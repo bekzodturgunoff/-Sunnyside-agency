@@ -1,93 +1,76 @@
 import React from "react";
+
+import images from "./constants/images";
 import People from "./People";
-import ArrowImg from "../images/icon-arrow-down.svg";
-import HeaderImg from "../images/desktop/image-header.jpg";
-import ContentOneImg from "../images/desktop/image-transform.jpg";
-import ContentTwoImg from "../images/desktop/image-stand-out.jpg";
-import ContentThreeOneImg from "../images/desktop/image-graphic-design.jpg";
-import ContentThreeTwoImg from "../images/desktop/image-photography.jpg";
-import FaceOne from "../images/image-emily.jpg";
-import FaceTwo from "../images/image-thomas.jpg";
-import FaceThree from "../images/image-jennie.jpg";
 
-// import People from "People";
-
-export default function Hero() {
+export default function Content() {
   return (
-    <div className="main">
-      <div className="hero--main">
-        <h1>WE ARE CREATIVES</h1>
-        <img className="arrow" src={ArrowImg} />
-        <img className="header--img" src={HeaderImg} />
-      </div>
-
+    <div className="content">
       <div className="content--one">
-        <div className="text--div">
-          <h1>Transform your brand</h1>
+        <div className="content-one-text">
+          <h2>Transform your brand</h2>
           <p>
             We are a full-service agency specializing in helping brands grow
             fast. Engage your clients through compelling visuals that do most of
             marketing for you.
           </p>
           <p>
-            <span>
+            <span className="yellow">
               <a href="#">LEARN MORE</a>
             </span>
           </p>
         </div>
 
         <div className="img--div">
-          <img src={ContentOneImg} />
+          <img src={images.transform} />
         </div>
       </div>
 
-      <div className="content--two">
+      <div className="content--one">
         <div className="img--div">
-          <img src={ContentTwoImg} />
+          <img src={images.stand} />
         </div>
 
-        <div className="text--div">
-          <h1>Stand out to the right audience</h1>
+        <div className="content-one-text">
+          <h2>Stand out to the right audience</h2>
           <p>
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we'll build and
             extend your brand in digital places.
           </p>
           <p>
-            <span>
+            <span className="red">
               <a href="#">LEARN MORE</a>
             </span>
           </p>
         </div>
       </div>
 
-      <div className="content--three">
-        <div className="text--img--div">
-          <img src={ContentThreeOneImg} />
-          <h3 className="graphic-design">Graphic Design</h3>
-          <p className="graphic-p">
+      <div className="content--two">
+        <div className="graphic-img">
+          <h3>Graphic Design</h3>
+          <p>
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients'
             attention.
           </p>
         </div>
 
-        <div className="text--img--div">
-          <img src={ContentThreeTwoImg} />
-          <h3 className="photography">Photography</h3>
-          <p className="photography-p">
+        <div className="photography-img">
+          <h3>Photography</h3>
+          <p>
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
           </p>
         </div>
       </div>
 
-      <div className="content--four">
-        <h3 className="four-heading">CLIENT TESTIMONIALS</h3>
+      <div className="content--three">
+        <h2 className="content-three-heading">CLIENT TESTIMONIALS</h2>
         <div className="people-div">
           <People
             className="people"
-            img={FaceOne}
+            img={images.emily}
             description="We put trust in Sunnyside and 
           they delivered, making sure our needs were met 
           and deadlines were always hit."
@@ -97,7 +80,7 @@ export default function Hero() {
 
           <People
             className="people"
-            img={FaceTwo}
+            img={images.thomas}
             description="Sunntside's enthusiasm coupled with their
         keen interest in our brand's success made it a satisfying
         and enjoyable experience."
@@ -107,7 +90,7 @@ export default function Hero() {
 
           <People
             className="people"
-            img={FaceThree}
+            img={images.jennie}
             description="Incredible end result! Our sales increased 
         over 400% when we worked with Sunnyside. Highly recommended!"
             username="Jennie F."
