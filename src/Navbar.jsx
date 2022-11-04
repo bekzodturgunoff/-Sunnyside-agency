@@ -29,6 +29,9 @@ export default function Navbar() {
 
           <button className="nav--btn">Contact</button>
         </ul>
+        <div className="hamburger">
+          <img src={images.hamburger} alt="" />
+        </div>
       </nav>
       <div className="hero" id="home">
         <h1>WE ARE CREATIVES</h1>
